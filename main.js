@@ -3,7 +3,7 @@
 // @description  Minimizes pushs and commits from github actions and bots from github.com dashboard
 // @namespace    RyoLee
 // @author       RyoLee
-// @version      0.4
+// @version      1.0
 // @copyright    2022, RyoLee (https://github.com/RyoLee)
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // @icon         https://github.githubassets.com/pinned-octocat.svg
