@@ -3,7 +3,7 @@
 // @description  Minimizes pushs and commits from github actions and bots from github.com dashboard
 // @namespace    RyoLee
 // @author       RyoLee
-// @version      0.2
+// @version      0.3
 // @copyright    2022, RyoLee (https://github.com/RyoLee)
 // @license      GPL-3.0-or-later; http://www.gnu.org/licenses/gpl-3.0.txt
 // @icon         https://github.githubassets.com/pinned-octocat.svg
@@ -29,6 +29,7 @@
       if (div.querySelector('.no-border-bottom')) {
         div.querySelector('.no-border-bottom').classList.replace('no-border-bottom', 'border-bottom')
       }
+      div.querySelector('.Box').style.display = ''
       div.style.cursor = ''
       if (div.querySelector('.newexpanderbutton')) {
         div.querySelector('.newexpanderbutton').remove()
@@ -44,6 +45,7 @@
           if (div.querySelector('.border-bottom')) {
             div.querySelector('.border-bottom').classList.replace('border-bottom', 'no-border-bottom')
           }
+          div.querySelector('.Box').style.display = 'none'
           div.style.cursor = 'row-resize'
           div.addEventListener('click', unhideBot)
           const line = div.querySelector('.Details .flex-column .flex-justify-between.flex-items-baseline')
