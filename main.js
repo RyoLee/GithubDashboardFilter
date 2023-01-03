@@ -17,7 +17,7 @@
   'use strict'
 
   function hideBots () {
-    document.querySelectorAll('#dashboard div.push:not(.shotBot), #dashboard div[classes*="push"]:not(.shotBot)').forEach(function (div) {
+    document.querySelectorAll('#dashboard div.push:not(.shotBot), #dashboard div.Details:not(.shotBot)').forEach(function (div) {
       const label = div.querySelector('.body .d-flex .d-flex .Label')
       const isAppUrl = div.querySelector('.body .d-flex .d-flex a.Link--primary[href^="/apps/"]')
       if (isAppUrl || (label && label.textContent === 'bot')) {
